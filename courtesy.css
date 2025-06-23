@@ -1,0 +1,240 @@
+/* Set the font family and background color of the page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Remove default list styles */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Center the heading and add some margin */
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Style the navigation menu */
+nav {
+  background-color: #e0d8d8;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #fff;
+}
+
+/* Style the hero section */
+.hero {
+  background-color: #d9e1e8;
+  padding: 50px;
+  margin: 50px auto;
+  max-width: 800px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* Style the sections */
+section {
+  padding: 50px;
+  margin: 50px auto;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* Style the call-to-action button */
+.cta {
+  display: inline-block;
+  background-color: #d9e1e8;
+  color: #333;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #c3d2db;
+}
+
+/* Style the footer */
+footer {
+  background-color: #e0d8d8;
+  text-align: center;
+  padding: 5px;
+  margin-top: 50px;
+  font-size: 14px;
+  color: #999;
+}
+
+/* Style the project cards */
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.project img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.project h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project p {
+  text-align: center;
+}
+
+.project a {
+  display: inline-block;
+  background-color: #d9e1e8;
+  color: #333;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+  background-color: #c3d2db;
+}
+
+/* horizontal image list css*/
+
+.project-box-container {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+  position: relative;
+}
+
+.image-list-container {
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  margin: 30px 0;
+  position: relative;
+}
+
+.image-list {
+  display: flex;
+  align-items: center;
+}
+
+.image-list img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.image-list a {
+  width: 500px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.left-arrow {
+  z-index: 1;
+  position: absolute;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  left:0%;
+}
+
+.right-arrow {
+  z-index: 1;
+  position: absolute;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  right: 0px;
+}
+
+/* Style the arrow buttons */
+.arrow {
+  background-color: #d9e1e8;
+  color: #000000;
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  /* Custom styles for arrows */
+  /* Feel free to modify as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Add scrollbar for better UX on small screens */
+/* Adjust as needed */
+@media (max-width: 768px) {
+  .image-list {
+    overflow-x: auto;
+    scrollbar-width: thin;
+    white-space: nowrap;
+  }
+
+  .image-list img {
+    margin-right: 10px;
+  }
+}
